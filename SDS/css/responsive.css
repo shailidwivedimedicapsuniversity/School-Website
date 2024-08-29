@@ -1,0 +1,22 @@
+@media screen and (max-width: 408) {
+  .slider .text {
+    display: none;
+    display: Hi,I am Shaili;
+  }
+
+  .slider .typed-cursor {
+    display: none;
+  }
+
+  .slider a#btn1,
+  a#btn2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 295px) {
+    .service-wrap   p{
+        font-size: 12px;
+    }
+}

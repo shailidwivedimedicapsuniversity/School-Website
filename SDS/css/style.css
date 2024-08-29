@@ -1,0 +1,813 @@
+/*==============================================
+          basic properties starts
+===================================================*/
+body {
+  overflow-x: hidden;
+}
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+/*==============================================
+          basic properties ends
+===================================================*/
+
+/*==============================================
+      styles for navigation starts
+===================================================*/
+.navbar {
+  padding: 22px 0px;
+  border-bottom: none !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar ul li a {
+  color: red !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.5s, ease-in;
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  color: purple !important;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0px;
+  background: none !important;
+}
+.icon-bar {
+  color: black !important;
+  background-color: black !important;
+}
+.navbar-toggle {
+  border: 1px solid black !important;
+  transition: all 0.5s, ease-in;
+}
+.navbar-toggle:hover {
+  background-color: plum !important;
+}
+.navbar-inverse .navbar-collapse {
+  border: none !important;
+}
+
+#location {
+  border: 1px solid red;
+  border-radius: 50px;
+}
+
+.navbar-inverse {
+  background-color: transparent !important;
+}
+
+/*==============================================
+      styles for navigation ends
+===================================================*/
+
+/*=========================================================================
+  sticky navigation with background color using customo javascript
+===============================================================================*/
+.secondary {
+  background-color: darkcyan !important;
+}
+
+/*==============================================
+      slider starts
+===================================================*/
+
+.slider {
+  width: 100%;
+  height: 700px;
+  background-image: url(..//images/students.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0, 65);
+  position: relative;
+}
+
+.slider-content {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+/* .icons .fa {
+  font-size: 30px;
+  margin-right: 7px;
+} */
+.profile img {
+  height: 230px;
+  border-radius: 50%;
+}
+
+.cta-div {
+  margin-top: 30px;
+}
+#btn1 {
+  padding: 10px 18px;
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 2px solid;
+  border-top-left-radius: 15px;
+  transition: all 0.5s ease-in;
+  margin-right: -6px;
+}
+
+#btn1:hover {
+  text-decoration: none;
+  color: white;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+}
+
+#btn2 {
+  padding: 10px 18px;
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  border: 2px solid;
+  border-bottom-right-radius: 15px;
+  transition: all 0.5s ease-in;
+}
+
+#btn2:hover {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  border-color: orangered;
+}
+
+.social-networks a.fa {
+  border: 2px solid blue;
+  padding: 10px;
+  color: blue;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  margin-right: 2px;
+  transition: all 0.5s ease-in;
+}
+
+.social-networks a.fa:hover {
+  text-decoration: none;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  color: white;
+}
+
+.slider .text,
+.slider .typed-cursor {
+  display: inline;
+  font-size: 30px;
+}
+
+.primary {
+  color: palevioletred;
+}
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.9s infinite;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*==============================================
+      slider ends
+===================================================*/
+
+/*==============================================
+     services styles
+===================================================*/
+
+.service-area {
+  margin-top: 10px;
+  background-color: blanchedalmond;
+}
+.service-area p {
+  margin-bottom: -5px;
+}
+
+.service-wrap {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 25px 35px;
+  position: relative;
+  transition: all 0.5s ease 0.5s;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.service-wrap::before,
+.service-wrap::after {
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #34495e;
+}
+
+.service-wrap::before {
+  top: -37px;
+  left: 100%;
+}
+.service-wrap:hover::before {
+  left: -27px;
+  opacity: 1;
+}
+.service-wrap::after {
+  right: 100%;
+  bottom: -37px;
+}
+.service-wrap:hover::after {
+  right: -27px;
+  opacity: 1;
+}
+.service-wrap:hover {
+  color: yellow;
+}
+.service-wrap:h3 {
+  color: yellow;
+}
+.service-wrap:hover h3 {
+  color: yellow;
+}
+.service-wrap:hover h3:after {
+  color: yellow;
+}
+.service-icon i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+.service-wrap:hover .service-icon i {
+  transform: rotate(360deg);
+}
+.service-wrap h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  position: relative;
+}
+.service-wrap p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*==============================================
+             work styles starts 
+===================================================*/
+.work {
+  margin-top: 25px;
+}
+.img-wrapper img {
+  height: 200px;
+}
+.row.no-gutters[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.img-wrapper {
+  overflow: hidden;
+}
+.img-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  scale: zoom-in;
+}
+
+/*==============================================
+             work styles ends 
+===================================================*/
+
+/*==============================================
+             team styles
+===================================================*/
+
+.team-member {
+  margin: 0 15px;
+  margin-top: 80px;
+}
+.team-member img {
+  height: 280px;
+}
+
+.team-member-info {
+  padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px;
+  text-transform: uppercase;
+}
+
+h4.team-member-designation {
+  color: deepskyblue;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.social-icon i {
+  font-size: 17px;
+  width: 32px;
+  height: 32px;
+}
+
+/*==============================================
+             reviews styles
+===================================================*/
+.carousel-inner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 3px solid black;
+  padding: 5px;
+}
+.testimonials {
+  background-image: url(..//img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.testimonials .carousel-indicators {
+  bottom: -60px;
+}
+.border-bottom {
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.carousel-inner p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+/*==============================================
+             faq styles stats
+===================================================*/
+
+.freeimage img {
+  height: 300px;
+  width: 300px;
+  margin-top: -45px;
+}
+
+#accordian .panel {
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#accordian .panel-heading {
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+#accordian .panel-title a {
+  display: block;
+  padding: 25px 35px;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  background: #34495e;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a:after,
+#accordian .panel-title a.collapsed:after {
+  content: "\f068";
+  font-family: fontawesome;
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  border-radius: 50%;
+  background: #34495e;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  border: 5px solid white;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a.collapsed:after {
+  content: "\f067";
+}
+#accordian .panel-title a:hover:after,
+#accordian .panel-title a.collapsed:hover:after {
+  transform: rotate(360deg);
+}
+
+#accordian .panel-body {
+  padding: 15px 25px;
+  background-color: #ebebeb;
+  font-size: 14px;
+  color: #8c8c8c;
+  line-height: 25px;
+  border-top: none;
+  position: relative;
+}
+
+.panel-heading a {
+  text-decoration: none !important;
+  font-weight: normal;
+}
+/*==============================================
+             faq styles ends
+===================================================*/
+
+/*==============================================
+             video styles starts
+===================================================*/
+
+.video-area {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(..//img/video.jpg);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  overflow: hidden;
+  margin-top: 40px;
+  background-attachment: fixed;
+}
+.play {
+  background: url(..//img/btn.jpg) no-repeat 70% 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+  -webkit-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+  -moz-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+  -o-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+}
+
+.play:hover {
+  box-shadow: 0px 0px 15px 20px rgba(0, 84, 111, 0.5);
+  -webkit-box-shadow: 0px 0px 0px 20px rgba(0, 84, 111, 0.5);
+  -moz-box-shadow: 0px 0px 0px 20px rgba(0, 84, 111, 0.5);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 54.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-top: -130px;
+  display: none;
+}
+/*==============================================
+             video styles ends
+===================================================*/
+
+/*==============================================
+           blog styles starts
+===================================================*/
+
+.latest-news-area {
+  margin-top: 40px;
+}
+
+.latest-news-wrap {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-img img {
+  height: 200px;
+  width: 100%;
+}
+
+.news-img {
+  position: relative;
+}
+
+.news-img:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: "";
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+
+.latest-news-wrap:hover .news-img::before {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.deat {
+  background: #f89406 none repeat scroll 0 0;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 60px;
+  padding: 10px;
+}
+
+.deat span {
+  display: block;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.news-content {
+  padding: 20px;
+  margin-left: -20px;
+}
+.news-content i {
+  font-size: 17px;
+  display: inline-block;
+}
+.news-content .fa {
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.news-content .fa-facebook {
+  color: #3b5995;
+}
+.news-content .fa-twitter {
+  color: #0084b4;
+}
+.news-content .fa-linkedin {
+  color: #0077b5;
+}
+.news-content .fa-whatsapp {
+  color: #34af23;
+}
+.news-content .fa-youtube-square {
+  color: red;
+}
+.news-content p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.news-content a.Read {
+  font-size: 14px;
+  background-color: #34495e;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.news-content a.Read:hover {
+  font-size: 14px;
+  border: 1px solid #34495e;
+  border-top-right-radius: 20px;
+  background-color: transparent;
+  color: #34495e;
+  margin-right: 0;
+  text-decoration: none;
+}
+
+/*==============================================
+           blog styles ends
+===================================================*/
+
+/*==============================================
+           counter stat styles starts
+===================================================*/
+
+.stat {
+  background-image: url(..//img/counter.jpg);
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: white;
+  background-attachment: fixed;
+  margin-top: 80px;
+  background-size: cover;
+}
+
+.stat i {
+  font-size: 70px;
+}
+
+.stat-items h2 {
+  font-weight: bolder;
+  font-size: 32px;
+  color: deepskyblue;
+}
+
+.stat p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/*==============================================
+           counter stat styles ends
+===================================================*/
+
+/*==============================================
+            contact-area styles starts
+===================================================*/
+
+.contact-area .container-fluid {
+  background-color: rosybrown;
+}
+
+.form-control {
+  border-radius: 0px !important;
+  border: 1px solid #34495e !important;
+}
+
+.contact-form button.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 12px 43px;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: white !important;
+  background-color: black;
+  box-shadow: 50px grey;
+}
+.section-heading h2 {
+  color: #000;
+}
+
+.border-bottom {
+  width: 40px;
+  height: 2px;
+}
+
+.contact-infos {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: -30px;
+  background: darkcyan;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #000;
+}
+
+.contact-infos .fa {
+  color: white;
+  font-size: 25px;
+  border: 1px solid whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+}
+.contact-infos p {
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+/*==============================================
+            contact-area styles ends
+===================================================*/
+
+/*==============================================
+            map-area styles starts
+===================================================*/
+.maps {
+  margin-top: 20px;
+}
+
+/*==============================================
+            footer-area styles starts
+===================================================*/
+.footer {
+  background-color: darkslategray;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-top: 125px;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+
+.social-icon a {
+  margin: 0 16px 20px 16px;
+  display: inline-block;
+}
+
+.footer .fa {
+  font-size: 20px;
+  color: dodgerblue;
+  height: 60px;
+  width: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: white;
+  line-height: 40px;
+  border: 10px solid #34495e;
+  text-align: center;
+  transition: all 0.7s ease-in;
+}
+
+.social-icon a:hover .fa {
+  border: 10px solid whitesmoke;
+  transform: rotate(360deg);
+}
+
+.bordernow {
+  width: 40px;
+  border-bottom: 2px solid whitesmoke;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.footerlogo img {
+  height: 40px;
+  width: 40px;
+}
+.copyright h4 {
+  color: white;
+}
